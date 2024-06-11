@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envelope</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background-image: url(./assets/images.jpeg);
+        }
+
+        .envelope-container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .envelope {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            background-color: #ffffff;
+            border: 2px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .flap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ddd;
+            transform-origin: top;
+            transform: rotateX(0deg);
+            transition: transform 1s ease;
+        }
+
+        .body {
+            position: relative;
+            width: 200%;
+            height: 200%;
+            background-color: #ffffff;
+        }
+
+        .paper {
+            display: flex;
+            opacity: 0;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            top: 20px;
+            left: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 20px;
+            padding-bottom: 40px;
+            overflow: auto;
+            height: 100%;
+        }
+
+        .paper p {
+            font-size: 14px;
+            margin: 10px 0;
+            padding: 0;
+        }
+
+        .triangle-button {
+            z-index: 2;
+            position: relative;
+            top: 150px;
+            width: 0;
+            height: 0;
+            border-left: 151px solid transparent;
+            border-right: 151px solid transparent;
+            border-top: 150px solid #007BFF;
+            margin-top: 0px;
+            cursor: pointer;
+        }
+
+        .triangle-button:hover {
+            border-top: 150px solid #0056b3;
+        }
+
+        .images {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        video {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Birthday</h1>
+    <h1>Happy Sweet Seventeen</h1>
+    <h1>my Sweet Heart</h1>
+    <h1>Click The envelope</h1>
+    <div class="envelope-container">
+        <div class="triangle-button" id="toggleButton">
+        </div>
+        <div class="envelope" id="envelope">
+            <div class="flap" id="flap"></div> 
+            <div class="paper" id="paper">
+                <h1>Teruntuk sayaaang naa afiqqq
+                </h1>
+                <h3>My Dear: Aidilla</h3>
+                <p>Selamat ulang tahun sayaaang , selamat yaa sekarang sayaaang uda umur 17 tahun
+                    semoga sayaang kedepanya bisa lebih dewasa lagi, bisa lebih mudah untuk mengendalikan emosi nya
+                    juga sayaang bisa turunin ego nya kali kita lagi marahan ,
+                    supaya kita bisa lebih mudah buat baikan oteyyy sayaaaangg naa afiqq,
+                    Maafin afiq yaa sayaaangg cuman bisa kasi kayak gini , kedepanya afiq bakal kasih sesuatu yang lebih baik buat Aidilla
+                    semoga sayaaangg sehat selalu yaa sayaangg, semoga selalu di panjangkan umur nya , berkah hidup nya,
+                    selalu di jaga oleh Allah subhannahu wa ta'ala ,semoga di mudah kan urusanya,
+                    <h1>LOVE YOUUU SAYAAANGGG NAA AFIQQ</h1>
+                    Doa afiq selalu setiap hari untuk aiii jadi nda hari ini ajaa yaaa, afiq selalu doain aiii kokk 
+                    sayaaaanggg aiii banyaaa banyaaaaaaa loveeeee youuuuuu sayaaaaaaanggg 
+                    >_< muachhh heheheheee
+
+                    udaaa yaaa sayaaanggg segini ajaa hehehe
+                    maaf yaa sayaang afiq nda bisa kasi banyaa banyaaa
+                    Loveeee youuuu selaluuu dee sayaaaangg naa afiqq
+                    tunggu afiq yaaa di sanaa , afiq janjiii selama aii setia sama afiq , afiq bakal dateng ke sana buat lamar aii dan nikahin aii secepatnyaaa,
+                    bantuuu dengan doa setiap hari yaaa sayaaaaaaaaangg 
+                    Loveeeee youuuuuuuuuu sayaaaaaaangg naaa afiqqqqq
+                </p>
+                <div class="images">
+                    <video controls>
+                        <source src="./assets/WhatsApp Video 2024-06-11 at 06.42.50.mp4" />
+                    </video>
+                    <video controls>
+                        <source src="./assets/WhatsApp Video 2024-06-11 at 06.41.41.mp4" />
+                    </video>
+                    <video controls>
+                        <source src="./assets/WhatsApp Video 2024-06-11 at 06.41.42.mp4" />
+                    </video>
+                    <video controls>
+                        <source src="./assets/WhatsApp Video 2024-06-11 at 06.41.56.mp4" />
+                    </video>
+                    <video controls>
+                        <source src="./assets/WhatsApp Video 2024-06-11 at 06.41.57.mp4" />
+                    </video>
+                    <video controls>
+                        <source src="./assets/WhatsApp Video 2024-06-11 at 06.42.05.mp4" />
+                    </video>
+                    <video controls>
+                        <source src="./assets/WhatsApp Video 2024-06-11 at 06.42.14.mp4" />
+                    </video>
+                    <video controls>
+                        <source src="./assets/WhatsApp Video 2024-06-11 at 06.42.24.mp4" />
+                    </video>
+                    <video controls>
+                        <source src="./assets/WhatsApp Video 2024-06-11 at 06.42.31.mp4" />
+                    </video>
+                    <video controls>
+                        <source src="./assets/WhatsApp Video 2024-06-11 at 06.42.37.mp4" />
+                    </video>
+                <p> Muhammad Afiq Yunanto - 11-juni-2024</p>
+                    <hr>
+
+                   
+                </div>
+                
+            </div>
+            <div class="body">
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('toggleButton').addEventListener('click', function () {
+            const flap = document.getElementById('flap');
+            const paper = document.getElementById('paper');
+            const button = document.getElementById('toggleButton')
+            const envelope = document.getElementById('envelope')
+
+            if (flap.style.transform === 'rotateX(-180deg)') {
+                flap.style.transform = 'rotateX(0deg)';
+                button.style.top = '150px'
+                envelope.style.width = '300px'
+                envelope.style.height = '200px'
+                paper.style.display = 'none'
+            } else {
+                paper.style.opacity = '100%'
+                paper.style.display = 'flex'
+                envelope.style.width = '350px'
+                envelope.style.height = '500px'
+                flap.style.transform = 'rotateX(-180deg)';
+                paper.style.zIndex = '3'
+                button.style.top = '700px'
+                button.style.transform = 'transform 1s ease;'
+            }
+        });
+    </script>
+</body>
+
+</html>
