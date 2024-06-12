@@ -6,16 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Envelope</title>
     <style>
+        @keyframes snow {
+            0% {
+                top: -10px;
+                opacity: 1;
+            }
+            100% {
+                top: 100vh;
+                opacity: 0;
+            }
+        }
+
         body {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            text-align: center;
             align-items: center;
             height: 100vh;
             background-color: #f0f0f0;
             margin: 0;
-            font-family: "Poppins", sans-serif;
+            font-family: "Gwendolyn", cursive;
+            color: #143c66;
             background-image: url(./assets/images.jpeg);
+            overflow: auto;
+        }
+
+        .snowflake {
+            position: absolute;
+            top: -10px;
+            color: #fff;
+            font-size: 1em;
+            user-select: none;
+            pointer-events: none;
+            z-index: 9999;
+            animation: snow linear infinite;
+        }
+
+        .snowflake:nth-child(1) {
+            left: 10%;
+            animation-duration: 10s;
+            font-size: 1.2em;
+            opacity: 0.8;
+        }
+
+        .snowflake:nth-child(2) {
+            left: 20%;
+            animation-duration: 12s;
+            font-size: 1.5em;
+            opacity: 0.9;
+        }
+
+        .snowflake:nth-child(3) {
+            left: 30%;
+            animation-duration: 8s;
+            font-size: 1.3em;
+            opacity: 0.7;
+        }
+
+        .snowflake:nth-child(4) {
+            left: 40%;
+            animation-duration: 14s;
+            font-size: 1.6em;
+            opacity: 0.85;
+        }
+
+        .snowflake:nth-child(5) {
+            left: 50%;
+            animation-duration: 11s;
+            font-size: 1.1em;
+            opacity: 0.75;
+        }
+
+        .snowflake:nth-child(6) {
+            left: 60%;
+            animation-duration: 9s;
+            font-size: 1.4em;
+            opacity: 0.9;
+        }
+
+        .snowflake:nth-child(7) {
+            left: 70%;
+            animation-duration: 13s;
+            font-size: 1.2em;
+            opacity: 0.8;
+        }
+
+        .snowflake:nth-child(8) {
+            left: 80%;
+            animation-duration: 10s;
+            font-size: 1.5em;
+            opacity: 0.7;
+        }
+
+        .snowflake:nth-child(9) {
+            left: 90%;
+            animation-duration: 12s;
+            font-size: 1.3em;
+            opacity: 0.85;
+        }
+
+        .snowflake:nth-child(10) {
+            left: 100%;
+            animation-duration: 15s;
+            font-size: 1.4em;
+            opacity: 0.75;
         }
 
         .envelope-container {
@@ -47,6 +142,7 @@
             transform-origin: top;
             transform: rotateX(0deg);
             transition: transform 1s ease;
+            background-image: url("./assets/download\ \(1\).jpeg");
         }
 
         .body {
@@ -63,6 +159,7 @@
             align-items: center;
             text-align: center;
             top: 20px;
+            font-size: medium;
             left: 10px;
             background-color: #f9f9f9;
             border: 1px solid #ccc;
@@ -70,10 +167,11 @@
             padding-bottom: 40px;
             overflow: auto;
             height: 100%;
+            background-image: url("./assets/lovepik-festive-background-image_401287649.jpg");
         }
 
         .paper p {
-            font-size: 14px;
+            font-size: 20px;
             margin: 10px 0;
             padding: 0;
         }
@@ -86,7 +184,7 @@
             height: 0;
             border-left: 151px solid transparent;
             border-right: 151px solid transparent;
-            border-top: 150px solid #007BFF;
+            border-top: 150px solid #3a526b;
             margin-top: 0px;
             cursor: pointer;
         }
@@ -111,9 +209,19 @@
     </style>
 </head>
 <body>
-    <h1>Happy Birthday</h1>
-    <h1>Happy Sweet Seventeen</h1>
-    <h1>my Sweet Heart</h1>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+    </div>
+    <h1>Happy Birthday <br> Happy Sweet Seventeen <br> my Sweet Heart</h1>
     <h1>Click The envelope</h1>
     <div class="envelope-container">
         <div class="triangle-button" id="toggleButton">
@@ -127,7 +235,11 @@
                 <p>Selamat ulang tahun sayaaang , selamat yaa sekarang sayaaang uda umur 17 tahun
                     semoga sayaang kedepanya bisa lebih dewasa lagi, bisa lebih mudah untuk mengendalikan emosi nya
                     juga sayaang bisa turunin ego nya kali kita lagi marahan ,
-                    supaya kita bisa lebih mudah buat baikan oteyyy sayaaaangg naa afiqq,
+                    supaya kita bisa lebih mudah buat baikan oteyyy sayaaaangg naa afiqq,semoga juga bisa selalu jujur dan terbuka sama afiq
+                    juga tidak ada rahasia yang di tutup tutupin di antara kita berdua,
+                    pegang kuat kuat yaaa janji kita untuk bertahan apapun yang terjadi, selama aii setia sama afiq , afiq bakal lebih setia buat aiii
+                    semoga nanti nya kita bisa pulang ke rumah yang sama yaa sayaaang na afiqq.
+                    LOVEEEE YOUUU BANYAAAA SAYAAAANGGG NA AFIQQ
                     Maafin afiq yaa sayaaangg cuman bisa kasi kayak gini , kedepanya afiq bakal kasih sesuatu yang lebih baik buat Aidilla
                     semoga sayaaangg sehat selalu yaa sayaangg, semoga selalu di panjangkan umur nya , berkah hidup nya,
                     selalu di jaga oleh Allah subhannahu wa ta'ala ,semoga di mudah kan urusanya,
@@ -142,7 +254,13 @@
                     tunggu afiq yaaa di sanaa , afiq janjiii selama aii setia sama afiq , afiq bakal dateng ke sana buat lamar aii dan nikahin aii secepatnyaaa,
                     bantuuu dengan doa setiap hari yaaa sayaaaaaaaaangg 
                     Loveeeee youuuuuuuuuu sayaaaaaaangg naaa afiqqqqq
-                </p>
+
+                   
+                </p> 
+
+                    <h1>I LOVEEEE YOUUUU AIDILLAAAA</h1>
+
+                    <h3>Selamat Menonton Sayaaaaaaaangg</h3>
                 <div class="images">
                     <video controls>
                         <source src="./assets/WhatsApp Video 2024-06-11 at 06.42.50.mp4" />
